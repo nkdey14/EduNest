@@ -24,12 +24,12 @@ This project is designed to store and manage student registration details **cour
 
 ## 🗄️ Database Setup
 
-### Create Database
+### Database Queries
 ```sql
 CREATE DATABASE sms_1;
 USE sms_1;
 
-### Create Admin Table
+## Create Admin Table
 
 create table admin(
 id int primary key,
@@ -46,7 +46,7 @@ insert into admin values(2, 'susmita', 'sdas23@gmail.com', 'test@123', 'sdas');
 
 select * from admin;
 
-### Create Student Registration Table
+## Create Student Registration Table
 
 create table student_registration(
 id int auto_increment primary key,
