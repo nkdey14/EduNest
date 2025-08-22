@@ -1,4 +1,4 @@
-# Student Management System
+# EduNest
 
 ## 📌 Purpose
 This project is designed to store and manage student registration details **course-wise**, using technologies such as **JSP, Servlet, MySQL**, and follows the **MVC Architecture**.  
