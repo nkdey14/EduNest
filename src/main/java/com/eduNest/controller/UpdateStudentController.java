@@ -28,7 +28,7 @@ public class UpdateStudentController extends HttpServlet {
 			HttpSession session = request.getSession(false);
 			if(session.getAttribute("email") != null) {
 				
-				session.setMaxInactiveInterval(20);
+				session.setMaxInactiveInterval(90);
 				
 //				String sessionEmail = (String)session.getAttribute("email");
 				
@@ -83,7 +83,7 @@ public class UpdateStudentController extends HttpServlet {
 			HttpSession session = request.getSession(false);
 			if(session.getAttribute("email") != null) {
 				
-				session.setMaxInactiveInterval(20);
+				session.setMaxInactiveInterval(90);
 				
 				String sessionEmail = (String)session.getAttribute("email");
 				

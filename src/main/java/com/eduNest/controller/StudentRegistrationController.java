@@ -27,6 +27,8 @@ public class StudentRegistrationController extends HttpServlet {
 			HttpSession session = request.getSession(false);
 			if(session.getAttribute("email") != null) {
 				
+				session.setMaxInactiveInterval(90);
+				
 				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/studentReg.jsp");
 				rd.forward(request, response);
 				
@@ -53,7 +55,7 @@ public class StudentRegistrationController extends HttpServlet {
 			HttpSession session = request.getSession(false);
 			if(session.getAttribute("email") != null) {
 				
-				session.setMaxInactiveInterval(20);
+				session.setMaxInactiveInterval(90);
 				
 				String sessionEmail = (String)session.getAttribute("email");
 				System.out.println("Session Email is: "+ sessionEmail);
